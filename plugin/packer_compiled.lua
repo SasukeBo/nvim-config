@@ -99,10 +99,20 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/ctrlp.vim",
     url = "https://github.com/kien/ctrlp.vim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mathjax-support-for-mkdp"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/mathjax-support-for-mkdp",
     url = "https://github.com/iamcco/mathjax-support-for-mkdp"
+  },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
   },
   ["mru.vim"] = {
     loaded = true,
@@ -119,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/scrooloose/nerdtree"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -133,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
-  },
-  ["vim-codefmt"] = {
-    loaded = true,
-    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-codefmt",
-    url = "https://github.com/google/vim-codefmt"
   },
   ["vim-colors-github"] = {
     loaded = true,
@@ -164,11 +174,6 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
-  ["vim-glaive"] = {
-    loaded = true,
-    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-glaive",
-    url = "https://github.com/google/vim-glaive"
-  },
   ["vim-go"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-go",
@@ -183,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-graphql",
     url = "https://github.com/jparise/vim-graphql"
-  },
-  ["vim-maktaba"] = {
-    loaded = true,
-    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-maktaba",
-    url = "https://github.com/google/vim-maktaba"
   },
   ["vim-nerdtree-tabs"] = {
     loaded = true,

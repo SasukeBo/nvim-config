@@ -18,7 +18,10 @@ nmap gl <C-W>l
 " change buf file
 nmap <Leader>b <C-o>
 nmap <Leader>p <C-^>
+" Go keymaps
 nmap <Leader>g :GoDef<CR>
+nmap <Leader>i :GoImplements<CR>
+nmap <Leader>m :GoFmt<CR>
 " 系统剪切板复制粘贴
 " v 模式下复制内容到系统剪切板
 vmap <Leader>c "+yy
@@ -26,8 +29,7 @@ vmap <Leader>c "+yy
 nmap <Leader>c "+yy
 " n 模式下粘贴系统剪切板的内容
 nmap <Leader>v "+p
-
-""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""
 
 " 模式匹配
 """"""""""""""""""""""""""""""""""""""""
@@ -44,5 +46,7 @@ map <S-t> :TagbarToggle<CR>
 " 分屏
 map <Leader>v :vsplit<CR>
 map <Leader>s :split<CR>
+" 切换注释
+map <Leader>/ :CommentToggle<CR>
 """"""""""""""""""""""""""""""""""""""""
 
