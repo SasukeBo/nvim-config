@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LeaderF = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/LeaderF",
+    url = "https://github.com/Yggdroot/LeaderF"
+  },
   SuperTab = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/SuperTab",
@@ -98,6 +103,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/ctrlp.vim",
     url = "https://github.com/kien/ctrlp.vim"
+  },
+  ["impatient.nvim"] = {
+    config = { "require('impatient')" },
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,
@@ -127,17 +143,27 @@ _G.packer_plugins = {
   nerdtree = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/scrooloose/nerdtree"
+    url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-comment"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  sonokai = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
   },
   tagbar = {
     loaded = true,
@@ -158,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-dadbod",
     url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-easy-align"] = {
     loaded = true,
@@ -207,6 +238,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: impatient.nvim
+time([[Config for impatient.nvim]], true)
+require('impatient')
+time([[Config for impatient.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

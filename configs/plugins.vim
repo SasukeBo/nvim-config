@@ -3,10 +3,15 @@
 "==============================================================================
 
 let g:go_fmt_command = "goimports" " 格式化将默认的 gofmt 替换，goimports区别在于imports导入的包会将golang内置包分开排列
-let g:go_fmt_autosave = 0 " 自动保存关闭
+let g:go_fmt_autosave = 1 " 自动格式化
 let g:go_autodetect_gopath = 1
 let g:go_list_type = "quickfix"
 let g:go_version_warning = 0
+let g:godef_split = 2
+let g:go_updatetime = 100
+let g:go_auto_type_info = 0
+let g:go_doc_popup_window = 1
+let g:go_highlight_build_constraints = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
@@ -15,13 +20,11 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
-let g:godef_split = 2
-let g:go_updatetime = 100
-let g:go_auto_type_info = 0
-let g:go_doc_popup_window = 1
+let g:go_highlight_variable_declarations = 1
+let g:go_highlight_variable_assignments = 1
 
 "==============================================================================
-"  								NERDTree 插件
+"  								NERDTree 插件[disabled]
 "==============================================================================
 " 显示行号
 let NERDTreeShowLineNumbers=0
@@ -35,8 +38,13 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']
 " 打开 vim 文件及显示书签列表
 let NERDTreeShowBookmarks=2
-" 在终端启动vim时，共享NERDTree
-let g:nerdtree_tabs_open_on_console_startup=1
+" 在终端启动vim时，自动打开NERDTree
+let g:nerdtree_tabs_open_on_console_startup=0
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+			\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 "==============================================================================
 "    						majutsushi/tagbar 插件

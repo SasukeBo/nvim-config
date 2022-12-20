@@ -3,9 +3,15 @@ vim.cmd("packadd packer.nvim")
 local packer = require('packer')
 
 packer.startup{function(use)
+	-- it is recommended to put impatient.nvim before any other plugins
+	-- Speed up loading Lua modules in Neovim to improve startup time.
+    use { "lewis6991/impatient.nvim", config = [[require('impatient')]] }
 	use 'wbthomason/packer.nvim'
 	-- 用来提供一个导航目录的侧边栏
-	use 'scrooloose/nerdtree'
+	use {
+		'preservim/nerdtree',
+		requires = { 'ryanoasis/vim-devicons' }
+	}
 	-- Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 	-- 可以快速对齐的插件
 	use 'junegunn/vim-easy-align'
@@ -31,13 +37,18 @@ packer.startup{function(use)
 	use 'acarapetis/vim-colors-github'
 	use 'rakr/vim-one'
 	use 'tanvirtin/monokai.nvim'
+    use 'sainnhe/sonokai'
+
 	-- go 主要插件
 	use 'fatih/vim-go' 
 	-- go 中的代码追踪，输入 gd 就可以自动跳转
 	use 'dgryski/vim-godef'
 	-- markdown 插件
 	use 'iamcco/mathjax-support-for-mkdp'
-	use 'iamcco/markdown-preview.nvim' -- { 'do': { -> mkdp#util#install() } }
+	use {
+		'iamcco/markdown-preview.nvim',
+		run = function() vim.fn["mkdp#util#install"]() end
+	}
 	-- Vim 	use for the Perl module / CLI script 'ack' https://github.com/mileszs/ack.vim
 	use 'mileszs/ack.vim'
 	-- 模糊搜索文件
@@ -54,6 +65,21 @@ packer.startup{function(use)
 	use 'tpope/vim-dadbod'
 	-- Toggle comments in Neovim
 	use 'terrortylor/nvim-comment'
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons' }
+	}
+	use {
+		'Yggdroot/LeaderF',
+		run = function() vim.fn[":LeaderfInstallCExtension"]() end
+	}
+	-- use {
+	--   	'nvim-tree/nvim-tree.lua',
+	--   	requires = { 'nvim-tree/nvim-web-devicons' },
+	--   	tag = 'nightly'
+	-- }
 end}
 
 require('nvim_comment').setup()
+require('lualine').setup()
+-- require('nvim-tree').setup()

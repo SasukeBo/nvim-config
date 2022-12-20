@@ -41,6 +41,9 @@ set termguicolors
 
 " 配色方案，从配色方案插件中选择一种
 let g:airline_theme='one'
-colorscheme monokai
-" colorscheme one
+" colorscheme monokai
+" colorscheme sonokai
+" colorscheme neodark
+" colorscheme github
+colorscheme one
 " set background=dark " 主题背景 dark/light
