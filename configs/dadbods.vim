@@ -2,9 +2,9 @@
 "  							tpope/vim-dadbod 插件
 "  							数据库客户端，支持多种客户端
 "==============================================================================
-let g:dadbods = []
 " if g:db and b:db is set up -- b:db will be used.
 " so g:db would serve as a default database (first in the list)
+" g:dadbods declared in dadbods_urls.vim
 let g:db = g:dadbods[0].url
 
 command! DBSelect :call popup_menu(map(copy(g:dadbods), {k,v -> v.name}), {
