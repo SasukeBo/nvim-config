@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["popup-menu.nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/popup-menu.nvim",
+    url = "https://github.com/kamykn/popup-menu.nvim"
+  },
   sonokai = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/sonokai",

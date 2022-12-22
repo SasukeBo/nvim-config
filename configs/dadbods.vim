@@ -5,11 +5,26 @@
 " if g:db and b:db is set up -- b:db will be used.
 " so g:db would serve as a default database (first in the list)
 " g:dadbods declared in dadbods_urls.vim
-let g:db = g:dadbods[0].url
 
-command! DBSelect :call popup_menu(map(copy(g:dadbods), {k,v -> v.name}), {
-			\"callback": 'DBSelected'
-			\})
+let g:db = g:envs[0].url . "/" . g:pgdbs[0]
+
+function! s:selectDB(selected)
+	let g:pgdb = a:selected
+	let b:db = g:env . "/" . g:pgdb
+endfunction
+
+function! s:selectEnv(selected)
+	for env in g:envs
+		if env.name == a:selected
+	 		let g:env = env.url
+			break
+		endif
+	endfor
+	let b:db = g:env . "/" . g:pgdb
+endfunction
+
+command! DBSelect :call popup_menu#open(g:pgdbs, { selected -> s:selectDB(selected)})
+command! DBEnvSelect :call popup_menu#open(map(copy(g:envs), {k,v -> v.name}), { selected -> s:selectEnv(selected)})
 
 func! DBSelected(id, result)
 	if a:result != -1

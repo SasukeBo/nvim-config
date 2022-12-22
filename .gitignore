@@ -1,2 +1,3 @@
 **/*.swp
 configs/dadbods_urls.vim
+lua/config/*

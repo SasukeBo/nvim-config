@@ -73,13 +73,8 @@ packer.startup{function(use)
 		'Yggdroot/LeaderF',
 		run = function() vim.fn[":LeaderfInstallCExtension"]() end
 	}
-	-- use {
-	--   	'nvim-tree/nvim-tree.lua',
-	--   	requires = { 'nvim-tree/nvim-web-devicons' },
-	--   	tag = 'nightly'
-	-- }
+	use 'kamykn/popup-menu.nvim'
 end}
 
 require('nvim_comment').setup()
 require('lualine').setup()
--- require('nvim-tree').setup()
