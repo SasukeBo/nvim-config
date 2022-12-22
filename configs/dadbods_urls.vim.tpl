@@ -1,6 +1,10 @@
-let g:dadbods = []
+let g:envs = []
 let db = {
-			\"name": "Your Postgres Link Name",
-			\"url": "postgresql://postgres:password@localhost:5432/postgres",
+			\"name": "Local Postgres",
+			\"url": "postgresql://postgres:thingyouwe@localhost:32432",
 			\}
-call add(g:dadbods, db)
+call add(g:envs, db)
+
+let g:pgdbs = ['account', 'auth']
+let g:env = g:envs[0].url
+let g:pgdb = g:pgdbs[0]
