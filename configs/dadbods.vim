@@ -7,10 +7,18 @@
 " g:dadbods declared in dadbods_urls.vim
 
 let g:db = g:envs[0].url . "/" . g:pgdbs[0]
+	
+func! s:addDBs()
+call add(g:envs, {
+			\'name': g:pgdb,
+			\'url': g:env . "/" . g:pgdb
+				\})
+endfunc
 
 function! s:selectDB(selected)
 	let g:pgdb = a:selected
 	let b:db = g:env . "/" . g:pgdb
+	call s:addDBs()
 endfunction
 
 function! s:selectEnv(selected)
@@ -21,10 +29,21 @@ function! s:selectEnv(selected)
 		endif
 	endfor
 	let b:db = g:env . "/" . g:pgdb
+	call s:addDBs()
 endfunction
 
-command! DBSelect :call popup_menu#open(g:pgdbs, { selected -> s:selectDB(selected)})
-command! DBEnvSelect :call popup_menu#open(map(copy(g:envs), {k,v -> v.name}), { selected -> s:selectEnv(selected)})
+" command! DBSelect :call popup_menu#open(g:pgdbs, { selected -> s:selectDB(selected)})
+command! -nargs=? DBSelect call DBSelect(<args>)
+command! DBEnvSelect call popup_menu#open(map(copy(g:envs), {k,v -> v.name}), { selected -> s:selectEnv(selected)})
+
+func! DBSelect(...)
+	if a:0 > 0
+		call s:selectDB(a:1)
+		return
+	endif
+
+	call popup_menu#open(g:pgdbs, { selected -> s:selectDB(selected)})
+endfunc
 
 func! DBSelected(id, result)
 	if a:result != -1

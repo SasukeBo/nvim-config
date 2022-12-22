@@ -74,6 +74,7 @@ packer.startup{function(use)
 		run = function() vim.fn[":LeaderfInstallCExtension"]() end
 	}
 	use 'kamykn/popup-menu.nvim'
+	use 'kristijanhusak/vim-dadbod-ui'
 end}
 
 require('nvim_comment').setup()
