@@ -16,7 +16,7 @@ nmap <Leader>p <C-^>
 nmap <Leader>g :GoDef<CR>
 nmap <Leader>i :GoImplements<CR>
 nmap <Leader><S-c> :GoCallers<CR>
-nmap <Leader>m :GoFmt<CR>
+nmap <Leader>m :Autoformat<CR>
 " 系统剪切板复制粘贴
 " v 模式下复制内容到系统剪切板
 vmap <Leader>c "+yy

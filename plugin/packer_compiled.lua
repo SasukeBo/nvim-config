@@ -180,6 +180,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
+  ["vim-autoformat"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-autoformat",
+    url = "https://github.com/vim-autoformat/vim-autoformat"
+  },
   ["vim-colors-github"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-colors-github",
@@ -230,6 +235,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-graphql",
     url = "https://github.com/jparise/vim-graphql"
   },
+  ["vim-javascript"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-javascript",
+    url = "https://github.com/pangloss/vim-javascript"
+  },
   ["vim-nerdtree-tabs"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-nerdtree-tabs",
@@ -244,6 +254,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-youdao-translater",
     url = "https://github.com/ianva/vim-youdao-translater"
+  },
+  ["wxapp.vim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/wxapp.vim",
+    url = "https://github.com/chemzqm/wxapp.vim"
   }
 }
 

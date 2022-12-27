@@ -75,6 +75,9 @@ packer.startup{function(use)
 	}
 	use 'kamykn/popup-menu.nvim'
 	use 'kristijanhusak/vim-dadbod-ui'
+	use 'chemzqm/wxapp.vim'
+	use 'pangloss/vim-javascript'
+	use 'vim-autoformat/vim-autoformat'
 end}
 
 require('nvim_comment').setup()

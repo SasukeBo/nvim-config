@@ -15,8 +15,8 @@ set cursorline "突出显示当前行
 set showmatch " 显示括号匹配
 
 " tab 缩进
-set tabstop=4 " 设置Tab长度为4空格
-set shiftwidth=4 " 设置自动缩进长度为4空格
+set tabstop=2 " 设置Tab长度为4空格
+set shiftwidth=2 " 设置自动缩进长度为4空格
 set autoindent " 继承前一行的缩进方式，适用于多行注释
 
 " 定义快捷键的前缀，即<Leader>
@@ -47,3 +47,8 @@ let g:airline_theme='one'
 " colorscheme github
 colorscheme one
 " set background=dark " 主题背景 dark/light
+let g:formatterpath = ['/opt/homebrew/bin/gofmt', '/opt/homebrew/bin/clang-format', '/Users/sasukebo/.nvm/versions/node/v14.20.0/bin/pretty-js']
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+
+let b:formatdef_pretty_js = '"pretty-js"'
+let b:formatters_js = ['pretty_js']
