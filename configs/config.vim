@@ -52,3 +52,6 @@ let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 let b:formatdef_pretty_js = '"pretty-js"'
 let b:formatters_js = ['pretty_js']
+
+" 打开autoformat调试信息
+let g:autoformat_verbosemode=2
