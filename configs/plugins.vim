@@ -120,3 +120,11 @@ let g:ctrlp_custom_ignore = {
 "==============================================================================
 let g:formatdef_clangformat = "'clang-format -lines='.a:firstline.':'.a:lastline.' --assume-filename=\"'.expand('%:p').'\" -style=\"{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0, AlignConsecutiveAssignments: true, AlignConsecutiveAssignments: true}\"'"
 let b:formatters_c = ['clangformat']
+let g:formatterpath = ['/opt/homebrew/bin/gofmt', '/opt/homebrew/bin/clang-format', '/Users/sasukebo/.nvm/versions/node/v14.20.0/bin/pretty-js']
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+
+let b:formatdef_pretty_js = '"pretty-js"'
+let b:formatters_js = ['pretty_js']
+
+" 打开autoformat调试信息
+" let g:autoformat_verbosemode=2

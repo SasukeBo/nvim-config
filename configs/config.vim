@@ -47,11 +47,3 @@ let g:airline_theme='one'
 " colorscheme github
 colorscheme one
 " set background=dark " 主题背景 dark/light
-let g:formatterpath = ['/opt/homebrew/bin/gofmt', '/opt/homebrew/bin/clang-format', '/Users/sasukebo/.nvm/versions/node/v14.20.0/bin/pretty-js']
-let g:python3_host_prog = '/opt/homebrew/bin/python3'
-
-let b:formatdef_pretty_js = '"pretty-js"'
-let b:formatters_js = ['pretty_js']
-
-" 打开autoformat调试信息
-let g:autoformat_verbosemode=2
