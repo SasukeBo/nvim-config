@@ -78,6 +78,7 @@ packer.startup{function(use)
 	use 'chemzqm/wxapp.vim'
 	use 'pangloss/vim-javascript'
 	use 'vim-autoformat/vim-autoformat'
+	use 'gregsexton/MatchTag'
 end}
 
 require('nvim_comment').setup()

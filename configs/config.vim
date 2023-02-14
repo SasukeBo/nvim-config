@@ -47,3 +47,7 @@ let g:airline_theme='one'
 " colorscheme github
 colorscheme one
 " set background=dark " 主题背景 dark/light
+
+set statusline+=%F
+set title
+set titlestring=%{hostname()}\ \ %F

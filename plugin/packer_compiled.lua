@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/LeaderF",
     url = "https://github.com/Yggdroot/LeaderF"
   },
+  MatchTag = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/MatchTag",
+    url = "https://github.com/gregsexton/MatchTag"
+  },
   SuperTab = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/SuperTab",
