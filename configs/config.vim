@@ -50,4 +50,4 @@ colorscheme one
 
 set statusline+=%F
 set title
-set titlestring=%{hostname()}\ \ %F
+set titlestring=%F
