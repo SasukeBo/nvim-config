@@ -43,5 +43,7 @@ map <Leader>v :vsplit<CR>
 map <Leader>s :split<CR>
 " 切换注释
 map <Leader>/ :CommentToggle<CR>
+" 自动填充结构体
+map <Leader><S-f> :GoFillStruct<CR>
 """"""""""""""""""""""""""""""""""""""""
 
