@@ -5,7 +5,7 @@ local packer = require('packer')
 packer.startup{function(use)
 	-- it is recommended to put impatient.nvim before any other plugins
 	-- Speed up loading Lua modules in Neovim to improve startup time.
-    use { "lewis6991/impatient.nvim", config = [[require('impatient')]] }
+	use { "lewis6991/impatient.nvim", config = [[require('impatient')]] }
 	use 'wbthomason/packer.nvim'
 	-- 用来提供一个导航目录的侧边栏
 	use {
@@ -37,10 +37,10 @@ packer.startup{function(use)
 	use 'acarapetis/vim-colors-github'
 	use 'rakr/vim-one'
 	use 'tanvirtin/monokai.nvim'
-    use 'sainnhe/sonokai'
+	use 'sainnhe/sonokai'
 
 	-- go 主要插件
-	use 'fatih/vim-go' 
+	use 'fatih/vim-go'
 	-- go 中的代码追踪，输入 gd 就可以自动跳转
 	use 'dgryski/vim-godef'
 	-- markdown 插件
@@ -49,15 +49,15 @@ packer.startup{function(use)
 		'iamcco/markdown-preview.nvim',
 		run = function() vim.fn["mkdp#util#install"]() end
 	}
-	-- Vim 	use for the Perl module / CLI script 'ack' https://github.com/mileszs/ack.vim
+	-- Vim	use for the Perl module / CLI script 'ack' https://github.com/mileszs/ack.vim
 	use 'mileszs/ack.vim'
 	-- 模糊搜索文件
 	use 'kien/ctrlp.vim'
 	-- graphql highlight
 	use 'jparise/vim-graphql'
-	-- https://github.com/tpope/vim-fugitive vim 	use for git
+	-- https://github.com/tpope/vim-fugitive vim	use for git
 	use 'tpope/vim-fugitive'
-	-- The Most Recently Used (MRU) 	use
+	-- The Most Recently Used (MRU)		use
 	use 'vim-scripts/mru.vim'
 	-- A code-completion engine for Vim
 	use 'ycm-core/YouCompleteMe'
@@ -79,6 +79,8 @@ packer.startup{function(use)
 	use 'pangloss/vim-javascript'
 	use 'vim-autoformat/vim-autoformat'
 	use 'gregsexton/MatchTag'
+	-- 自动关闭html类似的标签
+	use 'alvan/vim-closetag'
 end}
 
 require('nvim_comment').setup()
