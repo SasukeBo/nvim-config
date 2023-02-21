@@ -123,6 +123,8 @@ let b:formatters_c = ['clangformat']
 let g:formatterpath = ['/opt/homebrew/bin/gofmt', '/opt/homebrew/bin/clang-format', '/Users/sasukebo/.nvm/versions/node/v14.20.0/bin/pretty-js']
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
+let g:formatters_javascript = ['prettier']
+
 " 打开autoformat调试信息
 " let g:autoformat_verbosemode=2
 
