@@ -123,9 +123,6 @@ let b:formatters_c = ['clangformat']
 let g:formatterpath = ['/opt/homebrew/bin/gofmt', '/opt/homebrew/bin/clang-format', '/Users/sasukebo/.nvm/versions/node/v14.20.0/bin/pretty-js']
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
-let b:formatdef_pretty_js = '"pretty-js"'
-let b:formatters_js = ['pretty_js']
-
 " 打开autoformat调试信息
 " let g:autoformat_verbosemode=2
 
@@ -161,11 +158,11 @@ let g:closetag_emptyTags_caseSensitive = 1
 " Disables auto-close if not in a "valid" region (based on filetype)
 "
 let g:closetag_regions = {
-    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-    \ 'javascript.jsx': 'jsxRegion',
-    \ 'typescriptreact': 'jsxRegion,tsxRegion',
-    \ 'javascriptreact': 'jsxRegion',
-    \ }
+			\ 'typescript.tsx': 'jsxRegion,tsxRegion',
+			\ 'javascript.jsx': 'jsxRegion',
+			\ 'typescriptreact': 'jsxRegion,tsxRegion',
+			\ 'javascriptreact': 'jsxRegion',
+			\ }
 
 " Shortcut for closing tags, default is '>'
 "
