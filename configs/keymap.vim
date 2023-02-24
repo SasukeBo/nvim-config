@@ -24,10 +24,12 @@ vmap <Leader>c "+yy
 nmap <Leader>c "+yy
 " n 模式下粘贴系统剪切板的内容
 nmap <Leader>v "+p
+" 触发gopl重新编译
+nmap <Leader>rb :GoBuildTag ''<CR>
 """""""""""""""""""""""""""""""""""""""""
 
 " 模式匹配
-""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""
 map <Leader>t :tabnew<CR>
 map <Leader>tn :tabn<Space>
 " 查看历史打开文件
@@ -45,5 +47,5 @@ map <Leader>s :split<CR>
 map <Leader>/ :CommentToggle<CR>
 " 自动填充结构体
 map <Leader><S-f> :GoFillStruct<CR>
-""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""
 

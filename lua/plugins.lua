@@ -37,7 +37,7 @@ packer.startup{function(use)
 	use 'acarapetis/vim-colors-github'
 	use 'rakr/vim-one'
 	use 'tanvirtin/monokai.nvim'
-	use 'sainnhe/sonokai'
+	-- use 'sainnhe/sonokai'
 
 	-- go 主要插件
 	use 'fatih/vim-go'

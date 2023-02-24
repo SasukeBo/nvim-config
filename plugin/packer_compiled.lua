@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
+  ["nginx.vim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nginx.vim",
+    url = "https://github.com/vim-scripts/nginx.vim"
+  },
   ["nvim-comment"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/nvim-comment",
@@ -170,11 +175,6 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/popup-menu.nvim",
     url = "https://github.com/kamykn/popup-menu.nvim"
   },
-  sonokai = {
-    loaded = true,
-    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/sonokai",
-    url = "https://github.com/sainnhe/sonokai"
-  },
   tagbar = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/tagbar",
@@ -189,6 +189,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-autoformat",
     url = "https://github.com/vim-autoformat/vim-autoformat"
+  },
+  ["vim-closetag"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-closetag",
+    url = "https://github.com/alvan/vim-closetag"
   },
   ["vim-colors-github"] = {
     loaded = true,
@@ -244,6 +249,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-javascript",
     url = "https://github.com/pangloss/vim-javascript"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/tpope/vim-markdown"
   },
   ["vim-nerdtree-tabs"] = {
     loaded = true,
