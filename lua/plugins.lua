@@ -83,7 +83,14 @@ packer.startup{function(use)
 	-- 自动关闭html类似的标签
 	use 'alvan/vim-closetag'
 	use 'vim-scripts/nginx.vim'
+	use 'glepnir/dashboard-nvim'
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 end}
 
 require('nvim_comment').setup()
 require('lualine').setup()
+require('dashboard_config')
+

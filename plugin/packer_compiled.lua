@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/ctrlp.vim",
     url = "https://github.com/kien/ctrlp.vim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["impatient.nvim"] = {
     config = { "require('impatient')" },
     loaded = true,
@@ -170,6 +175,11 @@ _G.packer_plugins = {
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   ["popup-menu.nvim"] = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/popup-menu.nvim",
@@ -179,6 +189,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/tagbar",
     url = "https://github.com/majutsushi/tagbar"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/sasukebo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
