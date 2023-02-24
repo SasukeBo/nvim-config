@@ -7,3 +7,16 @@
 :b [N] 切换到第N个文件，例如 :b 3 命令切换到第3个文件。 ...
 :b {bufname} 通过文件名切换到bufname 对应的文件，输入文件名时，可以用Tab键补全。
 ```
+- Vim Terminal
+
+1. 如何退出Terminal mode
+
+```vim
+<c-\> <c-n>
+```
+
+2. 在新tab打开terminal
+
+```
+:tab term
+```

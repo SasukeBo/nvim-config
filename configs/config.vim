@@ -1,5 +1,5 @@
 "==============================================================================
-" vim 内置配置 
+" vim 内置配置
 "==============================================================================
 
 " 设置 vimrc 修改保存后立刻生效，不用在重新打开
@@ -20,7 +20,7 @@ set shiftwidth=2 " 设置自动缩进长度为4空格
 set autoindent " 继承前一行的缩进方式，适用于多行注释
 
 " 定义快捷键的前缀，即<Leader>
-let mapleader=";" 
+let mapleader=";"
 
 " 开启实时搜索
 set incsearch
@@ -51,3 +51,5 @@ colorscheme one
 set statusline+=%F
 set title
 set titlestring=%F
+
+let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'go']

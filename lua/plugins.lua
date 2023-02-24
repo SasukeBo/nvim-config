@@ -49,6 +49,7 @@ packer.startup{function(use)
 		'iamcco/markdown-preview.nvim',
 		run = function() vim.fn["mkdp#util#install"]() end
 	}
+	use 'tpope/vim-markdown'
 	-- Vim	use for the Perl module / CLI script 'ack' https://github.com/mileszs/ack.vim
 	use 'mileszs/ack.vim'
 	-- 模糊搜索文件
@@ -81,6 +82,7 @@ packer.startup{function(use)
 	use 'gregsexton/MatchTag'
 	-- 自动关闭html类似的标签
 	use 'alvan/vim-closetag'
+	use 'vim-scripts/nginx.vim'
 end}
 
 require('nvim_comment').setup()
