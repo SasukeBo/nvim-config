@@ -33,7 +33,7 @@ nmap <Leader>rb :GoBuildTag ''<CR>
 map <Leader>t :tabnew<CR>
 map <Leader>tn :tabn<Space>
 " 查看历史打开文件
-map <Leader>o :browse oldfiles<CR>
+map <Leader>o :Telescope oldfiles<CR>
 " 打开文件目录树
 map nt :NERDTreeToggle<CR>
 " 打开文件搜索的快捷键
